@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đăng ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .register-container {
+      background: white;
+      padding: 30px 20px 20px 20px;
+      border-radius: 8px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 20px;
+    }
+    .tabs div {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .tabs .active {
+      color: #000;
+      border-bottom: 2px solid #007bff;
+    }
+    .tabs .inactive {
+      color: #aaa;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    .captcha-container {
+      display: flex;
+      align-items: center;
+    }
+    .captcha-container input {
+      flex: 1;
+    }
+    .captcha-img {
+      margin-left: 10px;
+      padding: 8px 12px;
+      background: #eee;
+      font-weight: bold;
+      color: #333;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .btn-register {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .back-btn {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-size: 16px;
+      background: none;
+      border: none;
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <button class="back-btn" onclick="goHome()">← Quay lại trang chủ</button>
+    <div class="close-btn">&times;</div>
+    <div class="tabs">
+      <div class="inactive">Đăng nhập</div>
+      <div class="active">Đăng ký</div>
+    </div>
+
+    <input type="text" placeholder="Số điện thoại *" />
+    <input type="password" placeholder="Mật khẩu *" />
+    <input type="password" placeholder="Nhập lại mật khẩu *" />
+    
+    <div class="captcha-container">
+      <input type="text" placeholder="Nhập mã xác thực *" />
+      <div class="captcha-img">t f z</div>
+    </div>
+
+    <button class="btn-register">Đăng ký</button>
+  </div>
+
+  <script>
+    function goHome() {
+      window.location.href = "index.html"; // Thay bằng URL trang chủ thật nếu có
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <style>
+.home-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.home-button:hover {
+    background-color: #218838;
+}
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .filter-bar {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .filter-group {
+      margin-bottom: 10px;
+    }
+
+    .filter-group span {
+      font-weight: bold;
+    }
+
+    .filter-options {
+      margin-top: 5px;
+    }
+
+    .filter-options a {
+      text-decoration: none;
+      margin-right: 10px;
+      color: #007bff;
+    }
+
+    .car-listing {
+      border-top: 2px solid #007bff;
+      padding-top: 20px;
+    }
+
+    .car-item {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 0;
+    }
+
+    .car-image {
+  width: 250px;
+  height: 150px;
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+    .car-info {
+      margin-left: 20px;
+      flex-grow: 1;
+    }
+
+    .car-info h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .car-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .car-price {
+      font-size: 18px;
+      color: red;
+      font-weight: bold;
+    }
+
+    .car-contact {
+      margin-top: 10px;
+    }
+
+    .car-contact a {
+      color: white;
+      background-color: #007bff;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="home-button"> Về trang chủ</a>
+<div class="filter-bar">
+  <div class="filter-group">
+    <span>Hãng xe:</span>
+    <div class="filter-options">
+      <a href="#" class="brand-filter" data-brand="all">Tất cả</a>
+      <a href="#" class="brand-filter" data-brand="Toyota">Toyota</a>
+      <a href="#" class="brand-filter" data-brand="Honda">Honda</a>
+      <a href="#" class="brand-filter" data-brand="Kia">Kia</a>
+      <a href="#" class="brand-filter" data-brand="Mitsubishi">Mitsubishi</a>      
+    </div>
+  </div>
+
+  <div class="filter-group">
+    <span>Năm SX:</span>
+    <div class="filter-options">
+      <a href="#" class="year-filter" data-year="all">Tất cả</a>
+      <a href="#" class="year-filter" data-year="2025">2025</a>
+      <a href="#" class="year-filter" data-year="2024">2024</a>
+      <a href="#" class="year-filter" data-year="2023">2023</a>
+      <a href="#" class="year-filter" data-year="2022">2022</a>
+      
+    </div>
+  </div>
+
+  <div class="filter-group">
+    <span>Khoảng giá:</span>
+    <div class="filter-options">
+      <a href="#" class="price-filter" data-price="all">Tất cả</a>
+      <a href="#" class="price-filter" data-min="300" data-max="500">300 - 500 triệu</a>
+      <a href="#" class="price-filter" data-min="500" data-max="700">500 - 700 triệu</a>
+      <a href="#" class="price-filter" data-min="700" data-max="9999">Trên 700 triệu</a>      
+    </div>
+  </div>
+</div>
+
+<div class="car-listing">
+
+  <div class="car-item" data-year="2025" data-brand="Honda" data-price="540">
+    <div class="car-image">
+      <img src="img/xe15.webp" alt="Honda City 1.5 L 2025">
+    </div>
+    <div class="car-info">
+      <h3>2025 – Honda City 1.5 L 2025 </h3>
+      <p>Số tự động • Xe mới • Máy xăng</p>
+      <p class="car-price">540 triệu</p>
+      <p class="car-contact">Hà Nam- <a href="#">Gọi ngay</a></p>
+  </div>
+</div>
+
+  <div class="car-item" data-year="2023"data-brand="Toyota" data-price="510">
+  <div class="car-image">
+    <img src="img/xe16.webp" alt="Toyota Vios G 2023">
+  </div>
+  <div class="car-info">
+    <h3>2023 –Toyota Vios G 2023 </h3>
+    <p>Số tự động  - xe mới - Máy xăng </p>
+    <p class="car-price">510 triệu</p>
+    <p class="car-contact">Hà Nội- <a href="#">Gọi ngay</a></p>
+  </div>
+</div>
+
+
+  <div class="car-item"data-year="2025"data-brand="Kia" data-price="670">
+    <div class="car-image">
+      <img src="img/xe17.webp" alt="Kia Carens 1.5G Luxury 2025 ">
+    </div>
+    <div class="car-info">
+      <h3>2025 –Kia Carens 1.5G Luxury 2025</h3>
+      <p>Số tự động  - xe mới - Máy xăng </p>
+      <p class="car-price">670 triệu</p>
+      <p class="car-contact">Tân Phong - <a href="#">Gọi ngay</a></p>
+    </div>
+  </div>
+
+  <div class="car-item"data-year="2023"data-brand="Mitsubishi" data-price="1150">
+    <div class="car-image">
+      <img src="img/xe18.webp" alt="Kia Carens 1.5G Luxury 2023 ">
+    </div>
+    <div class="car-info">
+      <h3>2023 –Mitsubishi Pajero Sport D 2023</h3>
+      <p>Số tự động  - xe mới - Máy xăng </p>
+      <p class="car-price">1 tỉ 150 triệu</p>
+      <p class="car-contact">Tp.HCM- <a href="#">Gọi ngay</a></p>
+    </div>
+  </div>
+
+  <div class="car-item"data-year="2022"data-brand="Kia" data-price="345">
+    <div class="car-image">
+      <img src="img/xe19.webp" alt="Kia Morning S 1.25 AT 2022 ">
+    </div>
+    <div class="car-info">
+      <h3>2022 –Kia Morning S 1.25 AT 2022</h3>
+      <p>Số tự động  - xe mới - Máy xăng </p>
+      <p class="car-price">345 triệu</p>
+      <p class="car-contact">Bà Rịa Vũng Tàu- <a href="#">Gọi ngay</a></p>
+    </div>
+  </div>
+
+  <div class="car-item"data-year="2024"data-brand="Toyota" data-price="1220">
+    <div class="car-image">
+      <img src="img/xe20.webp" alt="Toyota Camry 2.0Q 2024">
+    </div>
+    <div class="car-info">
+      <h3>2024 –Toyota Camry 2.0Q 2024 </h3>
+      <p>Số tự động  - xe mới - Máy xăng </p>
+      <p class="car-price">1 tỉ 220 triệu</p>
+      <p class="car-contact">Tp.HCM- <a href="#">Gọi ngay</a></p>
+    </div>
+  </div>
+
+  <div class="car-item"data-year="2024"data-brand="Honda" data-price="500">
+    <div class="car-image">
+      <div class="car-item" data-year="2018"></div>
+      <img src="img/xe21.webp" alt=" Honda BR-V G 2024 ">
+    </div>
+    <div class="car-info">
+      <h3>2024 – Honda BR-V G 2024</h3>
+      <p>Số tự động  - xe mới - Máy xăng </p>
+      <p class="car-price">500 triệu</p>
+      <p class="car-contact">Hưng Yên - <a href="#">Gọi ngay</a></p>
+    </div>
+  </div>
+</div>
+<script>
+  const filterLinks = document.querySelectorAll('.year-filter');
+  const carItems = document.querySelectorAll('.car-item');
+
+  filterLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const year = link.getAttribute('data-year');
+
+      carItems.forEach(item => {
+        if (year === 'all' || item.getAttribute('data-year') === year) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+<script>
+  const caritems = document.querySelectorAll('.car-item');
+
+  // Lọc theo hãng xe
+  document.querySelectorAll('.brand-filter').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const selectedBrand = this.getAttribute('data-brand');
+
+      carItems.forEach(item => {
+        const brand = item.getAttribute('data-brand');
+        if (selectedBrand === 'all' || brand === selectedBrand) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Lọc theo khoảng giá
+  document.querySelectorAll('.price-filter').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const min = parseInt(this.getAttribute('data-min'));
+      const max = parseInt(this.getAttribute('data-max'));
+
+      carItems.forEach(item => {
+        const price = parseInt(item.getAttribute('data-price'));
+        if (isNaN(min) || (price >= min && price <= max)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
